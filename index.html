@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator_Project with JS </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<script src="./script.js"></script>
+
+    <main class="container">
+      <h1 class="title">Calculatrice</h1>
+      <input type="text" id="output" readonly placeholder="0" />
+      <div id="calculator">
+
+          <button class="reset" onclick="effacer()"> CE </button>
+          <button class="supprimer" onclick="supp(output)"> &#8426;</button> 
+          <button class="percent" onclick="afficher('%')"> % </button>
+          <button class="operation" onclick="afficher('+')"> + </button>
+
+          <button class="number" onclick="afficher('7')"> 7 </button>
+          <button class="number" onclick="afficher('8')"> 8 </button>
+          <button class="number" onclick="afficher('9')"> 9 </button>
+          <button class="operation" onclick="afficher('-')"> - </button>
+
+          <button class="number" onclick="afficher('4')"> 4 </button>
+          <button class="number" onclick="afficher('5')"> 5 </button>
+          <button class="number" onclick="afficher('6')"> 6 </button>
+          <button class="operation" onclick="afficher('*')"> * </button>  
+
+
+          <button class="number" onclick="afficher('1')"> 1 </button>
+          <button class="number" onclick="afficher('2')"> 2 </button> 
+          <button class="number" onclick="afficher('3')"> 3 </button> 
+          <button class="operation" onclick="afficher('/')"> / </button>
+
+          <button class="number" onclick="afficher('0')"> 0 </button>
+          <button class="number" onclick="afficher('00')"> 00 </button>
+          <button class="number" onclick="afficher('.')"> . </button>
+          <button class="equal" onclick="calculer()"> = </button>
+
+      </div>
+    </main>
+</body>
+</html>
